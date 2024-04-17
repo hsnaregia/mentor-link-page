@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter"; /* this value can be anything you wish - it gets used in the class definition below */
+  src: url("https://fonts.google.com/specimen/Inte");
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  scrollbar-width: none;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Inter";
+}
+
+.cont {
+  width: 40vw;
+  height: 70vh;
+  padding: 2vh 0 0 0;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#profile-pic-part {
+  width: 40vw;
+  height: 15vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic-out {
+  width: 8vw;
+  height: 8vw;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.profile-pic-out img {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+}
+#written-under-prof {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40vw;
+  height: 15vh;
+  background-color: transparent;
+}
+.upper-part {
+  background-color: transparent;
+  width: 40vw;
+  height: 7vh;
+  line-height: 2rem;
+}
+.upper-part h1 {
+  display: flex;
+  justify-content: center;
+  color: hsl(0, 0%, 100%);
+}
+.upper-part p {
+  display: flex;
+  justify-content: center;
+  color: hsl(75, 94%, 57%);
+}
+
+.down-part {
+  width: 40vw;
+  height: 3vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: hsl(0, 0%, 100%);
+}
+#buttons-part {
+  width: 40vw;
+  height: 39vh;
+  background-color: transparent;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#buttons {
+  width: 30vw;
+  height: 5vh;
+  background-color: hsl(0, 0%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#buttons:hover {
+  cursor: pointer;
+  background-color: hsl(75, 94%, 57%);
+}
+
+@media only screen and (width: 375px) {
+  .cont {
+    width: 80vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+  }
+  #profile-pic-part {
+    width: 20vw;
+    height: 10vh;
+  }
+  .profile-pic-out {
+    width: 20vw;
+    height: 20vw;
+    background-color: pink;
+  }
+  .profile-pic-out img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .upper-part {
+    background-color: transparent;
+    font-size: 0.5rem;
+  }
+  .upper-part h1 {
+    font-weight: 700;
+  }
+  .down-part {
+    font-size: 0.6rem;
+  }
+  #buttons {
+    width: 65vw;
+    height: 4vh;
+    font-family: "Inter";
+    font-weight: 400;
+  }
+}
